@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Reyes Martínez - Actor y Director</title>
+<style>
+    :root {
+        --primary-color: #2c3e50;
+        --accent-color: #c0392b;
+        --bg-color: #f4f4f4;
+        --text-color: #333;
+        --white: #ffffff;
+        --border-color: #ddd;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: var(--white);
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+
+    header {
+        text-align: center;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* AJUSTE DE IMAGEN - CABEZA COMPLETA */
+    .photo-container {
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 10px;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 20%; /* Ajusta para mostrar más la parte superior */
+        border: 5px solid var(--primary-color);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: var(--primary-color);
+        margin-bottom: 5px;
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    .personal-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        border-left: 5px solid var(--primary-color);
+    }
+
+    .info-item strong {
+        display: block;
+        color: var(--primary-color);
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+
+    h3 {
+        color: var(--accent-color);
+        margin-top: 25px;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 0.95em;
+    }
+
+    table, th, td {
+        border: 1px solid var(--border-color);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .award-item {
+        background: #fff;
+        border: 1px solid var(--border-color);
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .award-item strong {
+        color: var(--accent-color);
+    }
+
+    footer {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+        font-size: 0.9em;
+        color: #666;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        h1 {
+            font-size: 2em;
+        }
+        
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-position: center 15%;
+        }
+        
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="photo-container">
+        <img src="arm.jpg" alt="Alfredo Reyes Martínez" class="profile-photo">
+    </div>
+    <h1>Alfredo Reyes Martínez</h1>
+    <div class="subtitle">Actor y Director Cubano</div>
+    <p>Graduado de la Universidad de las Artes (ISA). Con amplia trayectoria artística en cine, televisión y principalmente en el teatro.</p>
+</header>
+
+    <div class="personal-info">
+        <div class="info-item"><strong>Nacimiento:</strong> 22 de Abril de 1965, La Habana, Cuba</div>
+        <div class="info-item"><strong>Residencia:</strong> Cuba</div>
+        <div class="info-item"><strong>Nacionalidad:</strong> Cubana</div>
+        <div class="info-item"><strong>Educación:</strong> Universidad de las Artes (ISA)</div>
+        <div class="info-item"><strong>Ocupación:</strong> Actor y Director</div>
+        <div class="info-item"><strong>Grupo Actual:</strong> Teatro Espacio de la Habana</div>
+    </div>
+
+    <section>
+        <h2>Trayectoria como Actor</h2>
+        <p>Comenzó a trabajar en el teatro en la obra <em>Galápago</em> desde 1988. Ha formado parte de diversas compañías entre ellas Teatro Buendía, Pequeño Teatro de la Habana, Estudio Teatral Vivarta, Vital Teatro, entre otras. Actualmente es actor y director del grupo Teatro Espacio de la Habana.</p>
+        <p>Dentro de su carrera ha participado en muchos festivales dentro y fuera de Cuba, donde ha sido galardonado por múltiples premios de actuación y popularidad. Ha compartido con excelentes directores como: María Elena Ortega, Flora Lawten, Antonia Fernández, Alejandro Palomino, Julio Cesar Ramírez, entre otros.</p>
+        <p><strong>Última incursión en Cine:</strong> <em>Irremediablemente Juntos</em> (2012) dirigida por Jorge Luis Sánchez.</p>
+    </section>
+
+    <section>
+        <h2>Formación y Profesores</h2>
+        <h3>Principales Profesores</h3>
+        <ul>
+            <li><strong>Filander Funes:</strong> Profesor de actuación, Director teatral del Salvador.</li>
+            <li><strong>María Elena Ortega:</strong> Profesora de actuación, Directora teatral cubana.</li>
+            <li><strong>José Milián:</strong> Profesor de actuación, Director y Dramaturgo cubano.</li>
+            <li><strong>Ivan Tenorio:</strong> Profesor de expresión corporal, Director artístico y coreógrafo del Ballet Nacional de Cuba.</li>
+            <li><strong>Felix Padrón:</strong> Profesor de acrobacia, Acróbata y Malabarista del Circo Nacional de Cuba.</li>
+            <li><strong>Angel Menendez:</strong> Profesor de Canto, Solista y Primera Figura de la Opera Nacional de Cuba.</li>
+        </ul>
+
+        <h3>Cursos de Postgrado y Talleres</h3>
+        <ul>
+            <li>Santiago García y Patricia Ariza, Colombia. Teatro Nacional de Cuba, 1997.</li>
+            <li>Denisse Stoklos, Brasil, en el Teatro Nacional de Cuba, 1997.</li>
+            <li>Curso teórico con el destacado esteta francés Patrice Pavís. Gran Teatro de la Habana, Cuba, 1993.</li>
+            <li>Curso práctico con el mimo checo Ladislav Fialka. Gran Teatro de la Habana, Cuba, 1992.</li>
+            <li>Curso práctico de teatro tradicional español con el Grupo Teatro "La Zaranda". Gran Teatro de la Habana, Cuba, 1992.</li>
+            <li>Curso de actuación y espectáculos callejeros con la Compañía Teatro "Ridotto" de Italia. Cienfuegos, Cuba, 1991.</li>
+            <li>Clase Magistral con Francis Ford Coppola, Estados Unidos, ICAIC, Ciudad de la Habana, Cuba, 1991.</li>
+            <li>Curso teórico práctico con el destacado dramaturgo y escenógrafo español Eduardo Camacho. ISA de la Habana, 1990.</li>
+            <li>Taller de Dramaturgia con Oswaldo Dragún, Argentina. Teatro Bertolt Brecht, Ciudad de la Habana, 1990.</li>
+            <li>Miguel Rubio y Teresa Ralli, Perú, en Machurrucutu, ISA, Ciudad de La Habana, 1989.</li>
+            <li>Movimiento escénico y entrenamiento vocal con Julia Varley y la compañía Odín Theatre (Eugenio Barba). Ciudad de la Habana, 1989.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cursos Impartidos</h2>
+        <ul>
+            <li>Actuación y movimiento escénico en Juchitán Oaxaca, México.</li>
+            <li>Expresión corporal y movimiento escénico en la Universidad de Bellas Artes en Santa Cruz de Tenerife.</li>
+            <li>Juegos didácticos e introducción al teatro en la escuela pedagógica para niños primarios de La Laguna, Islas Canarias.</li>
+            <li>Expresión corporal y movimiento escénico para actores en Castilla La Mancha, España.</li>
+            <li>Expresión corporal y movimiento escénico en Escuela de formación de instructores de teatro de las provincias Artemisa y Mayabeque.</li>
+            <li>Actuación en la escuela de formación de instructores de teatro de las provincias Artemisa y Mayabeque.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Trabajo en Cine y Televisión</h2>
+        
+        <h3>Cine</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trabajo</th>
+                    <th>Personaje</th>
+                    <th>Guion</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coproducción Cubano-Brasileña "Estorbo"</td>
+                    <td>Reportero de televisión</td>
+                    <td>Chico Buarque D Holanda</td>
+                    <td>Rui Guerra</td>
+                </tr>
+                <tr>
+                    <td>Producción Cubana "Irremediablemente Juntos"</td>
+                    <td>Mokongo</td>
+                    <td>Jorge Luís Sanchez</td>
+                    <td>Jorge Luís Sanchez</td>
+                </tr>
+                <tr>
+                    <td>Coproducción Cubano-Venezolana Bolívar</td>
+                    <td>El Haitiano</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Televisión</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Obra</th>
+                    <th>Personaje</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corto de ficción "La Otra Historia"</td>
+                    <td>Raúl</td>
+                    <td>Armando Toledo</td>
+                </tr>
+                <tr>
+                    <td>Corto de ficción "Mercaderes del Ama"</td>
+                    <td>Nano</td>
+                    <td>Sherdon Britman (Francia)</td>
+                </tr>
+                <tr>
+                    <td>Serie "Hasta Encontrarnos" (Antena 3)</td>
+                    <td>Hugo (El Monje)</td>
+                    <td>Jorge Luis Sánchez (España)</td>
+                </tr>
+                <tr>
+                    <td>Novela "Las Huérfanas de la Obrapía"</td>
+                    <td>Chano</td>
+                    <td>Rafael González (Cheito)</td>
+                </tr>
+                <tr>
+                    <td>Tras la Huella "Rotonda"</td>
+                    <td>Sombrilla</td>
+                    <td>Armando Toledo</td>
+                </tr>
+                <tr>
+                    <td>Tras la Huella "Hora 92"</td>
+                    <td>Ismael</td>
+                    <td>Armando Toledo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Eventos y Reconocimientos</h2>
+        <div class="award-item">
+            <strong>Festín Teatral Internacional CARDENAS 2026</strong><br>
+            Obra: Calcinados o Elogio del Barrendero. Cárdenas, Tabasco, México, Enero-Febrero del 2026.
+        </div>
+        <div class="award-item">
+            <strong>Festival de Teatro A UNA SOLA VOZ</strong><br>
+            Obra: Calcinados o Elogio del Barrendero. Miami, EE. UU, febrero del 2015. <strong>-PREMIO DE ACTUACION</strong>
+        </div>
+        <div class="award-item">
+            <strong>Festival de Teatro de Cosenza</strong><br>
+            Obras: "Calcinados o Elogio del Barrendero" y "El Yuma y el Cubano". Italia, Septiembre-Octubre del 2014.
+        </div>
+        <div class="award-item">
+            <strong>Encuentro de solidaridad con cuba</strong><br>
+            Obra: Calcinados o Elogio del Barrendero. Oaxaca, México, Noviembre del 2013 – Febrero del 2014.
+        </div>
+        <div class="award-item">
+            <strong>Festival eitai 2012 de Querétaro</strong><br>
+            Obra: Calcinados o Elogio del Barrendero. Querétaro, México, Noviembre del 2012.
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de Teatro de la Habana</strong><br>
+            Obra: Esquinas. La Habana, Cuba, Septiembre del 2011.
+        </div>
+        <div class="award-item">
+            <strong>Encuentro del Arte y la Cultura del Mercosur. Teatro 2007</strong><br>
+            Obra: "Calcinados o Elogio del Barrendero". Eldorado, Misiones, Argentina, agosto del 2007. <strong>-PREMIO DE PUESTA EN ESCENA -PREMIO DE ACTUACION</strong>
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional OTOÑO AZUL</strong><br>
+            Obra: "Calcinados o Elogio del Barrendero". Buenos Aires, Argentina, mayo del 2007. <strong>-PREMIO ESPECIAL DEL JURADO "CATINA VERA" -PREMIO DE LA POPULARIDAD</strong>
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de Pequeño Formato El Mejunje</strong><br>
+            Obra: "Calcinados o Elogio del Barrendero". Santa Clara, Cuba, enero del 2007. <strong>-PREMIO DE ACTUACION</strong>
+        </div>
+        <div class="award-item">
+            <strong>Festival "Teatrales de invierno"</strong><br>
+            Obra: "Calcinados o Elogio del Barrendero". San Antonio, Cuba, noviembre del 2006. <strong>-PREMIO DE ACTUACION</strong>
+        </div>
+        <div class="award-item">
+            <strong>Festival de Camagüey 2004</strong><br>
+            Obra: "Muerte de Amor en Verona".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de La Habana 2003</strong><br>
+            Obra: "Historia de un Caba-yo".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de La Habana 2001</strong><br>
+            Obra: "Muertes de amor en Verona".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de Caracas 2001</strong><br>
+            Obra: "Historia de un Caba-yo".
+        </div>
+        <div class="award-item">
+            <strong>Gira Nacional con "Historia de un Caba-yo"</strong>. 2000.
+        </div>
+        <div class="award-item">
+            <strong>Festival de Camagüey 2000</strong><br>
+            Obra: "Otra vez Jehová con el cuento de Sodoma".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de monólogos y espectáculos unipersonales. 1995</strong><br>
+            Obra: "Las últimas horas del Emperador". Ciudad Habana.
+        </div>
+        <div class="award-item">
+            <strong>Encuentro Internacional teatral en Canarias. 1992</strong><br>
+            Obra: "La otra isla".
+        </div>
+        <div class="award-item">
+            <strong>Encuentro Internacional en Madrid. 1991</strong><br>
+            Obra: "Réquiem".
+        </div>
+        <div class="award-item">
+            <strong>Festival Nacional "La máscara de Caoba", en Santiago de Cuba. 1990</strong><br>
+            Obra: "Time – Ball".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de Teatro para niños en Cienfuegos. 1989</strong><br>
+            Obra: "Galápago".
+        </div>
+        <div class="award-item">
+            <strong>Festival Internacional de Juventudes Madeburgo 88. En Alemania. 1988</strong><br>
+            Obra: Lo que naturam num dá… Salamanca num presta.
+        </div>
+    </section>
+
+    <section>
+        <h2>Repertorio Teatral</h2>
+        
+        <h3>Como Actor</h3>
+        <ul>
+            <li><strong>"La Noche que Jamás Existió"</strong> (Autor: Humberto Robles, Marzo 2024)</li>
+            <li><strong>"Alocada Avaricia"</strong> (Autor: Roberto Espinal, Diciembre 2021)</li>
+            <li><strong>"Luz Negra"</strong> (Autor: Álvaro Menen Desleal, Mayo 2019)</li>
+            <li><strong>"Galápago"</strong> (Autor: Salvador Lémis, Agosto 2018)</li>
+            <li><strong>"Desamparado"</strong> (Autor: Albero Pedro, Marzo 2017)</li>
+            <li><strong>"En Busca del barquito de papel."</strong> (Co-dirección con Lázaro Hernández, Autora: Silvia Ortoff, Agosto 2015)</li>
+            <li><strong>"El Yuma y el Cubano"</strong> (Teatro dell a Ginestra, Italia. Co-dirección con Dante de Rose, 2014)</li>
+            <li><strong>"La Emigración es una Zorra"</strong> (Teatro dell a Ginestra, Italia. Co-dirección con Dante de Rose, 2013)</li>
+            <li><strong>"Galileo Galilei"</strong> (Autor: Bertolt Brecht, Dirección: Antonia Fernández, Junio 2012)</li>
+            <li><strong>"Tío Vania"</strong> (Premio de la crítica en Cuba 2010, Dirección: Julio C Ramírez, Octubre 2010)</li>
+            <li><strong>"La visita de la vieja dama"</strong> (Autor: Friedrich Durrenmmatt, Dirección: Alejandro Palomino, Marzo 2006)</li>
+            <li><strong>"Otelo, el Moro de Venecia"</strong> (Autor: William Shakespeare, Dirección: Giraldo Moisés Cárdenas, Enero 2006)</li>
+            <li><strong>"Calcinados o Elogio del Barrendero"</strong> (Monólogo, Autor: Manuel Martínez, Dirección: Osley Méndez, Octubre 2005)</li>
+            <li><strong>"Muerte de amor en Verona"</strong> (Versión de Romeo y Julieta, Dirección: Antonia Fernández, Septiembre 2001)</li>
+            <li><strong>"Historia de un Caba-yo"</strong> (Versión de Mark Rezovski / Tolstoi, Dirección: Antonia Fernández, Octubre 2000)</li>
+            <li><strong>"Sueño de una noche de verano"</strong> (Autor: W. Shakespeare, Dirección: José Milián, Julio 1999)</li>
+            <li><strong>"Vaselina"</strong> (Autor: Jim Jacobs, Dirección: José Milián, Febrero 1998)</li>
+            <li><strong>"Esperando a Godot"</strong> (Personaje: Pozo, Autor: Samuel Beckett, Dirección: José Milián, Octubre 1996)</li>
+            <li><strong>"Mahagonny"</strong> (Versión de Bertolt Brecht, Dirección: José Milián, Noviembre 1995)</li>
+        </ul>
+
+        <h3>Como Director</h3>
+        <ul>
+            <li><strong>"No se Elige ser un Héroe"</strong> (David de Sola, Mayo 2022)</li>
+            <li><strong>"Luz Negra"</strong> (Álvaro Menen Desleal, Mayo 2019)</li>
+            <li><strong>"Galápago"</strong> (Salvador Lémis)</li>
+            <li><strong>"Desamparado"</strong> (Albero Pedro, Marzo 2017)</li>
+            <li><strong>"En Busca del barquito de papel."</strong> (Silvia Ortoff junto a Lázaro Hernández, Agosto 2015)</li>
+            <li><strong>"La Emigración es una Zorra"</strong> (Co-dirección con Dante de Rose, 2014)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p><strong>Fuentes:</strong> Cuba escena, Consejo Nacional de las Artes Escénicas, entrevista 292, entrevista 281, loador, irremediablemente-juntos-nueva-película-cubana, Chejov-en-las-esquinas.</p>
+        <p>&copy; 2024 Alfredo Reyes Martínez. Todos los derechos reservados.</p>
+    </footer>
+</div>
+
+</body>
+</html>
