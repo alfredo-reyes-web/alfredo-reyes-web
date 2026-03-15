@@ -17,11 +17,7 @@
 --light-gray: #e8e8e8;
 }
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
 font-family: 'Montserrat', sans-serif;
@@ -59,10 +55,7 @@ background: white;
 padding: 0 10px;
 }
 
-.photo-container {
-text-align: center;
-margin-bottom: 15px;
-}
+.photo-container { text-align: center; margin-bottom: 15px; }
 
 .profile-photo {
 width: 220px;
@@ -122,13 +115,9 @@ text-transform: uppercase;
 letter-spacing: 0.5px;
 }
 
-.info-item {
-padding: 3px 0;
-}
+.info-item { padding: 3px 0; }
 
-section {
-margin-bottom: 30px;
-}
+section { margin-bottom: 30px; }
 
 h2 {
 font-family: 'Cormorant Garamond', serif;
@@ -161,10 +150,7 @@ text-transform: uppercase;
 letter-spacing: 1px;
 }
 
-ul {
-list-style: none;
-padding-left: 0;
-}
+ul { list-style: none; padding-left: 0; }
 
 li {
 margin-bottom: 6px;
@@ -189,9 +175,7 @@ margin: 15px 0;
 font-size: 0.85em;
 }
 
-table, th, td {
-border: 1px solid var(--light-gray);
-}
+table, th, td { border: 1px solid var(--light-gray); }
 
 th, td {
 padding: 10px;
@@ -207,13 +191,8 @@ font-size: 0.85em;
 letter-spacing: 0.5px;
 }
 
-tr:nth-child(even) {
-background-color: #f8f8f8;
-}
-
-tr:hover {
-background-color: #f0f0f0;
-}
+tr:nth-child(even) { background-color: #f8f8f8; }
+tr:hover { background-color: #f0f0f0; }
 
 .award-item {
 background: #fff;
@@ -247,9 +226,7 @@ font-style: italic;
 }
 
 /* TRAYECTORIA */
-.trayectoria-section {
-margin-bottom: 30px;
-}
+.trayectoria-section { margin-bottom: 30px; }
 
 .trayectoria-container {
 display: grid;
@@ -450,9 +427,7 @@ color: white;
 font-size: 0.85em;
 }
 
-.stat-item {
-text-align: center;
-}
+.stat-item { text-align: center; }
 
 .stat-number {
 display: block;
@@ -522,28 +497,24 @@ border-left-color: var(--gold);
 }
 
 .award-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: linear-gradient(135deg, #ffc107, #ff9800);
-    color: white;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.85em;
-    font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+position: absolute;
+top: 15px;
+right: 15px;
+background: linear-gradient(135deg, #ffc107, #ff9800);
+color: white;
+padding: 5px 12px;
+border-radius: 15px;
+font-size: 0.85em;
+font-weight: bold;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .award-title {
-    color: var(--primary-color);
-    font-size: 1.2em;
-    margin-bottom: 12px;
-    padding-right: 100px;
+color: var(--primary-color);
+font-size: 1.2em;
+margin-bottom: 12px;
+padding-right: 100px;
 }
-
-
-
-
 
 .award-info {
 color: #666;
@@ -594,9 +565,8 @@ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 transform: translateY(-2px);
 }
 
-.curso-card.international {
-border-left-color: var(--accent-color);
-}
+.curso-card.international { border-left-color: var(--accent-color); }
+.curso-card.national { border-left-color: var(--primary-color); }
 
 .card-header {
 display: flex;
@@ -605,9 +575,7 @@ align-items: center;
 margin-bottom: 8px;
 }
 
-.card-icon {
-font-size: 1.5em;
-}
+.card-icon { font-size: 1.5em; }
 
 .card-badge {
 background: var(--accent-color);
@@ -618,9 +586,7 @@ font-weight: 600;
 text-transform: uppercase;
 }
 
-.national-badge {
-background: var(--primary-color);
-}
+.national-badge { background: var(--primary-color); }
 
 .curso-titulo {
 color: var(--primary-color);
@@ -655,24 +621,12 @@ padding: 15px;
 background: var(--primary-color);
 }
 
-.stat-box {
-text-align: center;
-color: white;
-}
-
-.stat-box .stat-number {
-font-size: 2em;
-color: var(--gold);
-}
-
-.stat-box .stat-label {
-font-size: 0.8em;
-}
+.stat-box { text-align: center; color: white; }
+.stat-box .stat-number { font-size: 2em; color: var(--gold); }
+.stat-box .stat-label { font-size: 0.8em; }
 
 /* CINE Y TV */
-.cine-tv-header {
-margin-bottom: 20px;
-}
+.cine-tv-header { margin-bottom: 20px; }
 
 .media-images {
 display: grid;
@@ -680,13 +634,8 @@ grid-template-columns: repeat(2, 1fr);
 gap: 15px;
 }
 
-.image-container:first-child .media-img {
-    object-position: center 25%; /* Para la primera imagen (Cine) */
-}
-
-.image-container:last-child .media-img {
-    object-position: center 30%; /* Para la segunda imagen (Televisión) */
-}
+.image-container:first-child .media-img { object-position: center 25%; }
+.image-container:last-child .media-img { object-position: center 30%; }
 
 .image-container {
 position: relative;
@@ -735,15 +684,24 @@ padding-bottom: 8px;
 border-bottom: 2px solid var(--accent-color);
 }
 
-.media-table th {
-padding: 8px;
-font-size: 0.8em;
+/* === CORRECCIÓN PRINCIPAL: TABLAS RESPONSIVE === */
+.table-container {
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+margin: 0 -20px;
+padding: 0 20px;
+width: calc(100% + 40px);
 }
 
-.media-table td {
-padding: 8px;
+.media-table {
+width: 100%;
+border-collapse: collapse;
 font-size: 0.85em;
+min-width: 500px; /* Ancho mínimo para que no se comprima */
 }
+
+.media-table th { padding: 8px; font-size: 0.8em; }
+.media-table td { padding: 8px; font-size: 0.85em; }
 
 .media-table tbody tr.highlight-row {
 background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
@@ -751,106 +709,51 @@ border-left: 3px solid var(--gold);
 }
 
 /* Responsive */
-/* Ajuste para tablas en móviles */
-@media (max-width: 600px) {
-    .table-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
-        margin: 0 -15px; /* Compensa el padding del contenedor */
-        padding: 0 15px;
-    }
-    
-    .media-table {
-        font-size: 0.75em; /* Reduce más el tamaño */
-        min-width: 100%; /* Asegura que ocupe todo el ancho */
-        width: 100%;
-    }
-    
-    .media-table th,
-    .media-table td {
-        padding: 8px 5px; /* Reduce el padding */
-        white-space: nowrap; /* Evita que el texto se rompa */
-    }
-    
-    .media-table th {
-        font-size: 0.8em;
-        padding: 10px 5px;
-    }
-    
-    /* Alternativa: hacer las celdas más compactas */
-    .media-block {
-        padding: 15px 10px;
-        overflow: hidden; /* Evita desbordamiento */
-    }
-}
-
-/* Para pantallas muy pequeñas */
-@media (max-width: 400px) {
-    .media-table {
-        font-size: 0.7em;
-    }
-    
-    .media-table th,
-    .media-table td {
-        padding: 6px 3px;
-    }
-}
-
-
-    
 @media (max-width: 900px) {
-.container {
-padding: 25px;
-margin: 15px;
-}
-
-.trayectoria-container,
-.formacion-container,
-.eventos-container {
-grid-template-columns: 1fr;
-}
-
-.trayectoria-image-wrapper,
-.formacion-image-wrapper,
-.eventos-image-wrapper {
-max-width: 400px;
-margin: 0 auto;
-}
-
-.cursos-stats {
-grid-template-columns: repeat(2, 1fr);
-}
+.container { padding: 25px; margin: 15px; }
+.trayectoria-container, .formacion-container, .eventos-container { grid-template-columns: 1fr; }
+.trayectoria-image-wrapper, .formacion-image-wrapper, .eventos-image-wrapper { max-width: 400px; margin: 0 auto; }
+.cursos-stats { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
-h1 {
-font-size: 1.8em;
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+.profile-photo { width: 180px; height: 180px; }
+.personal-info { grid-template-columns: 1fr; font-size: 0.8em; }
+.media-images { grid-template-columns: 1fr; }
+
+/* Tablas en móvil */
+.table-container {
+margin: 0 -15px;
+padding: 0 15px;
+width: calc(100% + 30px);
 }
 
-h2 {
-font-size: 1.5em;
+.media-table {
+font-size: 0.75em;
+min-width: 450px;
 }
 
-.profile-photo {
-width: 180px;
-height: 180px;
+.media-table th, .media-table td { padding: 8px 5px; white-space: nowrap; }
+.media-table th { font-size: 0.8em; padding: 10px 5px; }
+.media-block { padding: 15px 10px; }
+.media-subtitle { font-size: 1.2em; }
+
+table { font-size: 0.8em; }
+th, td { padding: 6px; }
 }
 
-.personal-info {
-grid-template-columns: 1fr;
-font-size: 0.8em;
-}
-
-.media-images {
-grid-template-columns: 1fr;
-}
-
-table {
-font-size: 0.8em;
-}
-
-th, td {
-padding: 6px;
+@media (max-width: 400px) {
+.media-table { font-size: 0.7em; min-width: 400px; }
+.media-table th, .media-table td { padding: 6px 3px; }
+.image-overlay-stats {
+position: relative;
+top: auto;
+right: auto;
+margin-top: 10px;
+flex-direction: column;
+gap: 5px;
 }
 }
 </style>
@@ -946,55 +849,37 @@ Antonia Fernández, Alejandro Palomino y Julio Cesar Ramírez.
 <h2>Cursos Impartidos</h2>
 <div class="cursos-grid">
 <div class="curso-card international">
-<div class="card-header">
-<span class="card-icon">🇲</span>
-<span class="card-badge">Internacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇲🇽</span><span class="card-badge">Internacional</span></div>
 <div class="curso-titulo">Actuación y Movimiento Escénico</div>
 <div class="curso-lugar">📍 Juchitán, Oaxaca, México</div>
 <span class="curso-type">Taller Práctico</span>
 </div>
 <div class="curso-card international">
-<div class="card-header">
-<span class="card-icon">🇪🇸</span>
-<span class="card-badge">Internacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇪🇸</span><span class="card-badge">Internacional</span></div>
 <div class="curso-titulo">Expresión Corporal</div>
 <div class="curso-lugar">📍 Universidad de Bellas Artes, Tenerife</div>
 <span class="curso-type">Formación Universitaria</span>
 </div>
 <div class="curso-card international">
-<div class="card-header">
-<span class="card-icon">🇪🇸</span>
-<span class="card-badge">Internacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇪🇸</span><span class="card-badge">Internacional</span></div>
 <div class="curso-titulo">Juegos Didácticos y Teatro</div>
 <div class="curso-lugar">📍 La Laguna, Islas Canarias</div>
 <span class="curso-type">Educación Infantil</span>
 </div>
 <div class="curso-card international">
-<div class="card-header">
-<span class="card-icon">🇪🇸</span>
-<span class="card-badge">Internacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇪🇸</span><span class="card-badge">Internacional</span></div>
 <div class="curso-titulo">Expresión Corporal para Actores</div>
 <div class="curso-lugar">📍 Castilla La Mancha, España</div>
 <span class="curso-type">Formación de Actores</span>
 </div>
 <div class="curso-card national">
-<div class="card-header">
-<span class="card-icon">🇨🇺</span>
-<span class="card-badge national-badge">Nacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇨🇺</span><span class="card-badge national-badge">Nacional</span></div>
 <div class="curso-titulo">Expresión Corporal</div>
 <div class="curso-lugar">📍 Artemisa y Mayabeque</div>
 <span class="curso-type">Formación de Instructores</span>
 </div>
 <div class="curso-card national">
-<div class="card-header">
-<span class="card-icon">🇨🇺</span>
-<span class="card-badge national-badge">Nacional</span>
-</div>
+<div class="card-header"><span class="card-icon">🇨🇺</span><span class="card-badge national-badge">Nacional</span></div>
 <div class="curso-titulo">Actuación Teatral</div>
 <div class="curso-lugar">📍 Artemisa y Mayabeque</div>
 <span class="curso-type">Formación de Instructores</span>
@@ -1025,6 +910,7 @@ Antonia Fernández, Alejandro Palomino y Julio Cesar Ramírez.
 
 <div class="media-block">
 <h3 class="media-subtitle">🎥 Cine</h3>
+<div class="table-container">
 <table class="media-table">
 <thead><tr><th>Trabajo</th><th>Personaje</th><th>Guion</th><th>Dirección</th></tr></thead>
 <tbody>
@@ -1034,9 +920,11 @@ Antonia Fernández, Alejandro Palomino y Julio Cesar Ramírez.
 </tbody>
 </table>
 </div>
+</div>
 
 <div class="media-block">
 <h3 class="media-subtitle">📡 Televisión</h3>
+<div class="table-container">
 <table class="media-table">
 <thead><tr><th>Obra</th><th>Personaje</th><th>Dirección</th></tr></thead>
 <tbody>
@@ -1048,6 +936,7 @@ Antonia Fernández, Alejandro Palomino y Julio Cesar Ramírez.
 <tr><td><strong>"Hora 92"</strong></td><td>Ismael</td><td>Armando Toledo</td></tr>
 </tbody>
 </table>
+</div>
 </div>
 </section>
 
