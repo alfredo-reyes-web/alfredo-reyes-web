@@ -674,6 +674,14 @@ grid-template-columns: repeat(2, 1fr);
 gap: 15px;
 }
 
+  .image-container:first-child .media-img {
+    object-position: center 25%; /* Para la primera imagen (Cine) */
+}
+
+.image-container:last-child .media-img {
+    object-position: center 30%; /* Para la segunda imagen (Televisión) */
+}
+
 .image-container {
 position: relative;
 border-radius: 6px;
