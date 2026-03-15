@@ -1,472 +1,1137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfredo Reyes Martínez - Actor y Director</title>
-     <link rel="icon" type="image/png" href="arc.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfredo Reyes Martínez - Actor y Director</title>
+<link rel="icon" type="image/png" href="arc.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-    :root {
-        --primary-color: #2c3e50;
-        --accent-color: #c0392b;
-        --bg-color: #f4f4f4;
-        --text-color: #333;
-        --white: #ffffff;
-        --border-color: #ddd;
-    }
+:root {
+--primary-color: #1a1a2e;
+--secondary-color: #16213e;
+--accent-color: #8b2635;
+--gold: #c9a961;
+--bg-color: #fafafa;
+--text-color: #2c2c2c;
+--light-gray: #e8e8e8;
+}
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--bg-color);
-        margin: 0;
-        padding: 0;
-    }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-    .container {
-        max-width: 1000px;
-        margin: 20px auto;
-        background: var(--white);
-        padding: 40px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        border-radius: 8px;
-    }
+body {
+font-family: 'Montserrat', sans-serif;
+line-height: 1.5;
+color: var(--text-color);
+background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
 
-    header {
-        text-align: center;
-        border-bottom: 2px solid var(--primary-color);
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-    }
+.container {
+max-width: 950px;
+margin: 25px auto;
+background: #fff;
+padding: 35px;
+box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+border-top: 4px solid var(--accent-color);
+}
 
-    /* AJUSTE DE IMAGEN - CABEZA COMPLETA */
-    .photo-container {
-        text-align: center;
-        margin-bottom: 25px;
-        padding: 10px;
-    }
+header {
+text-align: center;
+border-bottom: 2px solid var(--light-gray);
+padding-bottom: 25px;
+margin-bottom: 25px;
+position: relative;
+}
 
-    .profile-photo {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center 20%; /* Ajusta para mostrar más la parte superior */
-        border: 5px solid var(--primary-color);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        display: block;
-        margin: 0 auto;
-    }
+header::after {
+content: '◆';
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+color: var(--accent-color);
+font-size: 1.2em;
+background: white;
+padding: 0 10px;
+}
 
-    h1 {
-        color: var(--primary-color);
-        margin-bottom: 5px;
-        font-size: 2.5em;
-    }
+.photo-container {
+text-align: center;
+margin-bottom: 15px;
+}
 
-    .subtitle {
-        font-size: 1.2em;
-        color: var(--accent-color);
-        font-weight: bold;
-    }
+.profile-photo {
+width: 220px;
+height: 220px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center 20%;
+border: 4px solid var(--primary-color);
+box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+display: block;
+margin: 0 auto;
+}
 
-    .personal-info {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        background: #f9f9f9;
-        padding: 20px;
-        border-radius: 5px;
-        margin-bottom: 30px;
-        border-left: 5px solid var(--primary-color);
-    }
+h1 {
+font-family: 'Cormorant Garamond', serif;
+color: var(--primary-color);
+margin: 10px 0 5px 0;
+font-size: 2.3em;
+font-weight: 700;
+letter-spacing: -0.5px;
+}
 
-    .info-item strong {
-        display: block;
-        color: var(--primary-color);
-    }
+.subtitle {
+font-size: 1em;
+color: var(--accent-color);
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 8px;
+}
 
-    section {
-        margin-bottom: 40px;
-    }
+header > p {
+font-size: 0.9em;
+color: #666;
+font-style: italic;
+max-width: 600px;
+margin: 0 auto;
+}
 
-    h2 {
-        color: var(--primary-color);
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 10px;
-        margin-top: 0;
-    }
+.personal-info {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 10px;
+background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+padding: 15px;
+border-left: 3px solid var(--accent-color);
+margin-bottom: 25px;
+font-size: 0.85em;
+}
 
-    h3 {
-        color: var(--accent-color);
-        margin-top: 25px;
-    }
+.info-item strong {
+display: block;
+color: var(--primary-color);
+font-weight: 600;
+font-size: 0.9em;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
 
-    ul {
-        list-style-type: square;
-        padding-left: 20px;
-    }
+.info-item {
+padding: 3px 0;
+}
 
-    li {
-        margin-bottom: 8px;
-    }
+section {
+margin-bottom: 30px;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-size: 0.95em;
-    }
+h2 {
+font-family: 'Cormorant Garamond', serif;
+color: var(--primary-color);
+border-bottom: 2px solid var(--accent-color);
+padding-bottom: 8px;
+margin: 0 0 20px 0;
+font-size: 1.8em;
+font-weight: 700;
+position: relative;
+display: inline-block;
+}
 
-    table, th, td {
-        border: 1px solid var(--border-color);
-    }
+h2::after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 60%;
+height: 2px;
+background: var(--gold);
+}
 
-    th, td {
-        padding: 12px;
-        text-align: left;
-    }
+h3 {
+color: var(--accent-color);
+margin: 20px 0 12px 0;
+font-size: 1.2em;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
 
-    th {
-        background-color: var(--primary-color);
-        color: var(--white);
-    }
+ul {
+list-style: none;
+padding-left: 0;
+}
 
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
+li {
+margin-bottom: 6px;
+padding-left: 18px;
+position: relative;
+font-size: 0.9em;
+line-height: 1.6;
+}
 
-    .award-item {
-        background: #fff;
-        border: 1px solid var(--border-color);
-        padding: 15px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-    }
+li::before {
+content: '—';
+position: absolute;
+left: 0;
+color: var(--accent-color);
+font-weight: bold;
+}
 
-    .award-item strong {
-        color: var(--accent-color);
-    }
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 15px 0;
+font-size: 0.85em;
+}
 
-    footer {
-        margin-top: 50px;
-        padding-top: 20px;
-        border-top: 1px solid var(--border-color);
-        font-size: 0.9em;
-        color: #666;
-        text-align: center;
-    }
+table, th, td {
+border: 1px solid var(--light-gray);
+}
 
-    @media (max-width: 600px) {
-        .container {
-            padding: 20px;
-            margin: 10px;
-        }
-        
-        h1 {
-            font-size: 2em;
-        }
-        
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-            object-position: center 15%;
-        }
-        
-        table {
-            display: block;
-            overflow-x: auto;
-        }
-    }
+th, td {
+padding: 10px;
+text-align: left;
+}
+
+th {
+background: var(--primary-color);
+color: white;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 0.85em;
+letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+background-color: #f8f8f8;
+}
+
+tr:hover {
+background-color: #f0f0f0;
+}
+
+.award-item {
+background: #fff;
+border-left: 3px solid var(--accent-color);
+padding: 12px 15px;
+margin-bottom: 8px;
+font-size: 0.9em;
+transition: all 0.3s ease;
+}
+
+.award-item:hover {
+background: #f8f8f8;
+transform: translateX(3px);
+}
+
+.award-item strong {
+color: var(--accent-color);
+display: block;
+margin-bottom: 4px;
+font-weight: 600;
+}
+
+footer {
+margin-top: 40px;
+padding-top: 20px;
+border-top: 2px solid var(--light-gray);
+font-size: 0.8em;
+color: #777;
+text-align: center;
+font-style: italic;
+}
+
+/* TRAYECTORIA */
+.trayectoria-section {
+margin-bottom: 30px;
+}
+
+.trayectoria-container {
+display: grid;
+grid-template-columns: 280px 1fr;
+gap: 25px;
+align-items: start;
+}
+
+.trayectoria-image-wrapper {
+position: relative;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.trayectoria-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.image-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: linear-gradient(to top, rgba(26, 26, 46, 0.9), transparent);
+padding: 12px;
+color: white;
+font-size: 0.85em;
+font-style: italic;
+}
+
+.lead-text {
+font-size: 0.95em;
+line-height: 1.7;
+margin-bottom: 15px;
+padding-left: 15px;
+border-left: 3px solid var(--accent-color);
+}
+
+.trayectoria-text p {
+line-height: 1.6;
+margin-bottom: 12px;
+text-align: justify;
+font-size: 0.9em;
+}
+
+.highlight-box {
+background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+border-left: 3px solid var(--gold);
+padding: 12px;
+margin-top: 15px;
+font-size: 0.9em;
+}
+
+.highlight-box strong {
+color: var(--primary-color);
+display: block;
+margin-bottom: 5px;
+font-weight: 600;
+}
+
+.highlight-box em {
+color: var(--accent-color);
+font-weight: 600;
+}
+
+/* FORMACIÓN */
+.formacion-container {
+display: grid;
+grid-template-columns: 280px 1fr;
+gap: 25px;
+margin-bottom: 25px;
+align-items: start;
+}
+
+.formacion-image-wrapper {
+position: relative;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.formacion-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.teachers-list li {
+padding: 10px 12px;
+margin-bottom: 8px;
+background: #f8f8f8;
+border-left: 3px solid var(--primary-color);
+font-size: 0.85em;
+}
+
+.teacher-name {
+font-weight: 600;
+color: var(--primary-color);
+display: block;
+margin-bottom: 3px;
+}
+
+.teacher-info {
+color: #666;
+font-size: 0.95em;
+}
+
+.cursos-section {
+background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+padding: 20px;
+border-top: 3px solid var(--primary-color);
+}
+
+.cursos-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 12px;
+margin-top: 15px;
+}
+
+.curso-item {
+background: white;
+padding: 12px;
+border-left: 3px solid var(--accent-color);
+font-size: 0.85em;
+transition: all 0.3s ease;
+}
+
+.curso-item:hover {
+box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+transform: translateX(3px);
+}
+
+.curso-year {
+display: inline-block;
+background: var(--primary-color);
+color: white;
+padding: 3px 10px;
+font-size: 0.8em;
+font-weight: 600;
+margin-bottom: 6px;
+}
+
+.curso-item p {
+margin: 0;
+line-height: 1.5;
+}
+
+.curso-item.highlight {
+background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+border-left-color: var(--gold);
+}
+
+/* EVENTOS */
+.eventos-container {
+display: grid;
+grid-template-columns: 280px 1fr;
+gap: 25px;
+align-items: start;
+}
+
+.eventos-image-wrapper {
+position: relative;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.eventos-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.image-overlay-below {
+background: var(--accent-color);
+padding: 10px;
+text-align: center;
+color: white;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 0.85em;
+}
+
+.image-overlay-stats {
+position: absolute;
+top: 150px;
+right: 65px;
+background: rgba(26, 26, 46, 0.9);
+padding: 10px 15px;
+display: flex;
+gap: 15px;
+color: white;
+font-size: 0.85em;
+}
+
+.stat-item {
+text-align: center;
+}
+
+.stat-number {
+display: block;
+font-size: 1.5em;
+font-weight: bold;
+color: var(--gold);
+}
+
+.stat-label {
+font-size: 0.8em;
+opacity: 0.9;
+}
+
+.awards-timeline {
+position: relative;
+padding-left: 25px;
+}
+
+.awards-timeline::before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 3px;
+background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+}
+
+.timeline-item {
+margin-bottom: 15px;
+position: relative;
+}
+
+.timeline-year {
+display: inline-block;
+background: var(--primary-color);
+color: white;
+padding: 4px 12px;
+font-size: 0.8em;
+font-weight: 600;
+margin-bottom: 6px;
+}
+
+.timeline-year::before {
+content: '';
+position: absolute;
+left: -29px;
+top: 8px;
+width: 8px;
+height: 8px;
+background: var(--accent-color);
+border-radius: 50%;
+border: 2px solid white;
+}
+
+.award-card {
+background: white;
+padding: 15px;
+border-left: 3px solid var(--primary-color);
+margin-bottom: 8px;
+font-size: 0.85em;
+}
+
+.award-card.award-winner {
+background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+border-left-color: var(--gold);
+}
+
+.award-badge {
+position: absolute;
+top: 10px;
+right: 10px;
+background: var(--gold);
+color: white;
+padding: 3px 8px;
+font-size: 0.75em;
+font-weight: 600;
+}
+
+.award-title {
+color: var(--primary-color);
+font-size: 1em;
+margin-bottom: 8px;
+font-weight: 600;
+}
+
+.award-info {
+color: #666;
+line-height: 1.6;
+font-size: 0.9em;
+}
+
+.award-info span {
+display: block;
+margin-bottom: 3px;
+}
+
+.award-prize {
+margin-top: 8px;
+padding: 6px;
+background: rgba(139, 38, 53, 0.1);
+border-left: 2px solid var(--accent-color);
+font-size: 0.85em;
+}
+
+.award-prize strong {
+color: var(--accent-color);
+display: block;
+}
+
+/* CURSOS IMPARTIDOS */
+.cursos-impartidos-section {
+background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+padding: 25px;
+border-top: 3px solid var(--primary-color);
+}
+
+.cursos-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 12px;
+}
+
+.curso-card {
+background: white;
+padding: 15px;
+border-left: 3px solid var(--primary-color);
+transition: all 0.3s ease;
+}
+
+.curso-card:hover {
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transform: translateY(-2px);
+}
+
+.curso-card.international {
+border-left-color: var(--accent-color);
+}
+
+.card-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 8px;
+}
+
+.card-icon {
+font-size: 1.5em;
+}
+
+.card-badge {
+background: var(--accent-color);
+color: white;
+padding: 3px 8px;
+font-size: 0.7em;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.national-badge {
+background: var(--primary-color);
+}
+
+.curso-titulo {
+color: var(--primary-color);
+font-size: 0.95em;
+margin-bottom: 6px;
+font-weight: 600;
+}
+
+.curso-lugar {
+display: flex;
+align-items: flex-start;
+gap: 6px;
+color: #666;
+font-size: 0.85em;
+margin-bottom: 8px;
+}
+
+.curso-type {
+display: inline-block;
+background: #e8e8e8;
+padding: 3px 8px;
+font-size: 0.75em;
+font-weight: 500;
+}
+
+.cursos-stats {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+margin-top: 20px;
+padding: 15px;
+background: var(--primary-color);
+}
+
+.stat-box {
+text-align: center;
+color: white;
+}
+
+.stat-box .stat-number {
+font-size: 2em;
+color: var(--gold);
+}
+
+.stat-box .stat-label {
+font-size: 0.8em;
+}
+
+/* CINE Y TV */
+.cine-tv-header {
+margin-bottom: 20px;
+}
+
+.media-images {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+}
+
+.image-container {
+position: relative;
+border-radius: 6px;
+overflow: hidden;
+height: 200px;
+}
+
+.media-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.image-label {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(26, 26, 46, 0.9);
+padding: 8px 12px;
+color: white;
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 0.9em;
+font-weight: 600;
+}
+
+.media-block {
+background: white;
+padding: 20px;
+margin-bottom: 20px;
+border-left: 3px solid var(--primary-color);
+}
+
+.media-subtitle {
+display: flex;
+align-items: center;
+gap: 10px;
+color: var(--primary-color);
+font-size: 1.3em;
+margin-bottom: 15px;
+padding-bottom: 8px;
+border-bottom: 2px solid var(--accent-color);
+}
+
+.media-table th {
+padding: 8px;
+font-size: 0.8em;
+}
+
+.media-table td {
+padding: 8px;
+font-size: 0.85em;
+}
+
+.media-table tbody tr.highlight-row {
+background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+border-left: 3px solid var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+.container {
+padding: 25px;
+margin: 15px;
+}
+
+.trayectoria-container,
+.formacion-container,
+.eventos-container {
+grid-template-columns: 1fr;
+}
+
+.trayectoria-image-wrapper,
+.formacion-image-wrapper,
+.eventos-image-wrapper {
+max-width: 400px;
+margin: 0 auto;
+}
+
+.cursos-stats {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px) {
+h1 {
+font-size: 1.8em;
+}
+
+h2 {
+font-size: 1.5em;
+}
+
+.profile-photo {
+width: 180px;
+height: 180px;
+}
+
+.personal-info {
+grid-template-columns: 1fr;
+font-size: 0.8em;
+}
+
+.media-images {
+grid-template-columns: 1fr;
+}
+
+table {
+font-size: 0.8em;
+}
+
+th, td {
+padding: 6px;
+}
+}
 </style>
 </head>
 <body>
-
 <div class="container">
-  <header>
-    <div class="photo-container">
-        <img src="arm.jpg" alt="Alfredo Reyes Martínez" class="profile-photo">
-    </div>
-    <h1>Alfredo Reyes Martínez</h1>
-    <div class="subtitle">Actor y Director Cubano</div>
-    <p>Graduado de la Universidad de las Artes (ISA). Con amplia trayectoria artística en cine, televisión y principalmente en el teatro.</p>
+<header>
+<div class="photo-container">
+<img src="arm.jpg" alt="Alfredo Reyes Martínez" class="profile-photo">
+</div>
+<h1>Alfredo Reyes Martínez</h1>
+<div class="subtitle">Actor y Director Cubano</div>
+<p>Graduado de la Universidad de las Artes (ISA). Amplia trayectoria en cine, televisión y teatro.</p>
 </header>
 
-    <div class="personal-info">
-        <div class="info-item"><strong>Nacimiento:</strong> 22 de Abril de 1965, La Habana, Cuba</div>
-        <div class="info-item"><strong>Residencia:</strong> Cuba</div>
-        <div class="info-item"><strong>Nacionalidad:</strong> Cubana</div>
-        <div class="info-item"><strong>Educación:</strong> Universidad de las Artes (ISA)</div>
-        <div class="info-item"><strong>Ocupación:</strong> Actor y Director</div>
-        <div class="info-item"><strong>Grupo Actual:</strong> Teatro Espacio de la Habana</div>
-    </div>
-
-    <section>
-        <h2>Trayectoria como Actor</h2>
-        <!-- IMAGEN DE TRAYECTORIA -->
-    <div class="section-image">
-        <img src="trayectoria-teatro.jpg" alt="Alfredo Reyes en escena teatral">
-        <p class="image-caption">Alfredo Reyes en una de sus presentaciones teatrales</p>
-    </div>
-        
-        <p>Comenzó a trabajar en el teatro en la obra <em>Galápago</em> desde 1988. Ha formado parte de diversas compañías entre ellas Teatro Buendía, Pequeño Teatro de la Habana, Estudio Teatral Vivarta, Vital Teatro, entre otras. Actualmente es actor y director del grupo Teatro Espacio de la Habana.</p>
-        <p>Dentro de su carrera ha participado en muchos festivales dentro y fuera de Cuba, donde ha sido galardonado por múltiples premios de actuación y popularidad. Ha compartido con excelentes directores como: María Elena Ortega, Flora Lawten, Antonia Fernández, Alejandro Palomino, Julio Cesar Ramírez, entre otros.</p>
-        <p><strong>Última incursión en Cine:</strong> <em>Irremediablemente Juntos</em> (2012) dirigida por Jorge Luis Sánchez.</p>
-    </section>
-
-    <section>
-        <h2>Formación y Profesores</h2>
-        <h3>Principales Profesores</h3>
-        <ul>
-            <li><strong>Filander Funes:</strong> Profesor de actuación, Director teatral del Salvador.</li>
-            <li><strong>María Elena Ortega:</strong> Profesora de actuación, Directora teatral cubana.</li>
-            <li><strong>José Milián:</strong> Profesor de actuación, Director y Dramaturgo cubano.</li>
-            <li><strong>Ivan Tenorio:</strong> Profesor de expresión corporal, Director artístico y coreógrafo del Ballet Nacional de Cuba.</li>
-            <li><strong>Felix Padrón:</strong> Profesor de acrobacia, Acróbata y Malabarista del Circo Nacional de Cuba.</li>
-            <li><strong>Angel Menendez:</strong> Profesor de Canto, Solista y Primera Figura de la Opera Nacional de Cuba.</li>
-        </ul>
-
-        <h3>Cursos de Postgrado y Talleres</h3>
-        <ul>
-            <li>Santiago García y Patricia Ariza, Colombia. Teatro Nacional de Cuba, 1997.</li>
-            <li>Denisse Stoklos, Brasil, en el Teatro Nacional de Cuba, 1997.</li>
-            <li>Curso teórico con el destacado esteta francés Patrice Pavís. Gran Teatro de la Habana, Cuba, 1993.</li>
-            <li>Curso práctico con el mimo checo Ladislav Fialka. Gran Teatro de la Habana, Cuba, 1992.</li>
-            <li>Curso práctico de teatro tradicional español con el Grupo Teatro "La Zaranda". Gran Teatro de la Habana, Cuba, 1992.</li>
-            <li>Curso de actuación y espectáculos callejeros con la Compañía Teatro "Ridotto" de Italia. Cienfuegos, Cuba, 1991.</li>
-            <li>Clase Magistral con Francis Ford Coppola, Estados Unidos, ICAIC, Ciudad de la Habana, Cuba, 1991.</li>
-            <li>Curso teórico práctico con el destacado dramaturgo y escenógrafo español Eduardo Camacho. ISA de la Habana, 1990.</li>
-            <li>Taller de Dramaturgia con Oswaldo Dragún, Argentina. Teatro Bertolt Brecht, Ciudad de la Habana, 1990.</li>
-            <li>Miguel Rubio y Teresa Ralli, Perú, en Machurrucutu, ISA, Ciudad de La Habana, 1989.</li>
-            <li>Movimiento escénico y entrenamiento vocal con Julia Varley y la compañía Odín Theatre (Eugenio Barba). Ciudad de la Habana, 1989.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Cursos Impartidos</h2>
-        <ul>
-            <li>Actuación y movimiento escénico en Juchitán Oaxaca, México.</li>
-            <li>Expresión corporal y movimiento escénico en la Universidad de Bellas Artes en Santa Cruz de Tenerife.</li>
-            <li>Juegos didácticos e introducción al teatro en la escuela pedagógica para niños primarios de La Laguna, Islas Canarias.</li>
-            <li>Expresión corporal y movimiento escénico para actores en Castilla La Mancha, España.</li>
-            <li>Expresión corporal y movimiento escénico en Escuela de formación de instructores de teatro de las provincias Artemisa y Mayabeque.</li>
-            <li>Actuación en la escuela de formación de instructores de teatro de las provincias Artemisa y Mayabeque.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Trabajo en Cine y Televisión</h2>
-        
-        <h3>Cine</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Trabajo</th>
-                    <th>Personaje</th>
-                    <th>Guion</th>
-                    <th>Dirección</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Coproducción Cubano-Brasileña "Estorbo"</td>
-                    <td>Reportero de televisión</td>
-                    <td>Chico Buarque D Holanda</td>
-                    <td>Rui Guerra</td>
-                </tr>
-                <tr>
-                    <td>Producción Cubana "Irremediablemente Juntos"</td>
-                    <td>Mokongo</td>
-                    <td>Jorge Luís Sanchez</td>
-                    <td>Jorge Luís Sanchez</td>
-                </tr>
-                <tr>
-                    <td>Coproducción Cubano-Venezolana Bolívar</td>
-                    <td>El Haitiano</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Televisión</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Obra</th>
-                    <th>Personaje</th>
-                    <th>Dirección</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Corto de ficción "La Otra Historia"</td>
-                    <td>Raúl</td>
-                    <td>Armando Toledo</td>
-                </tr>
-                <tr>
-                    <td>Corto de ficción "Mercaderes del Ama"</td>
-                    <td>Nano</td>
-                    <td>Sherdon Britman (Francia)</td>
-                </tr>
-                <tr>
-                    <td>Serie "Hasta Encontrarnos" (Antena 3)</td>
-                    <td>Hugo (El Monje)</td>
-                    <td>Jorge Luis Sánchez (España)</td>
-                </tr>
-                <tr>
-                    <td>Novela "Las Huérfanas de la Obrapía"</td>
-                    <td>Chano</td>
-                    <td>Rafael González (Cheito)</td>
-                </tr>
-                <tr>
-                    <td>Tras la Huella "Rotonda"</td>
-                    <td>Sombrilla</td>
-                    <td>Armando Toledo</td>
-                </tr>
-                <tr>
-                    <td>Tras la Huella "Hora 92"</td>
-                    <td>Ismael</td>
-                    <td>Armando Toledo</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h2>Eventos y Reconocimientos</h2>
-        <div class="award-item">
-            <strong>Festín Teatral Internacional CARDENAS 2026</strong><br>
-            Obra: Calcinados o Elogio del Barrendero. Cárdenas, Tabasco, México, Enero-Febrero del 2026.
-        </div>
-        <div class="award-item">
-            <strong>Festival de Teatro A UNA SOLA VOZ</strong><br>
-            Obra: Calcinados o Elogio del Barrendero. Miami, EE. UU, febrero del 2015. <strong>-PREMIO DE ACTUACION</strong>
-        </div>
-        <div class="award-item">
-            <strong>Festival de Teatro de Cosenza</strong><br>
-            Obras: "Calcinados o Elogio del Barrendero" y "El Yuma y el Cubano". Italia, Septiembre-Octubre del 2014.
-        </div>
-        <div class="award-item">
-            <strong>Encuentro de solidaridad con cuba</strong><br>
-            Obra: Calcinados o Elogio del Barrendero. Oaxaca, México, Noviembre del 2013 – Febrero del 2014.
-        </div>
-        <div class="award-item">
-            <strong>Festival eitai 2012 de Querétaro</strong><br>
-            Obra: Calcinados o Elogio del Barrendero. Querétaro, México, Noviembre del 2012.
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de Teatro de la Habana</strong><br>
-            Obra: Esquinas. La Habana, Cuba, Septiembre del 2011.
-        </div>
-        <div class="award-item">
-            <strong>Encuentro del Arte y la Cultura del Mercosur. Teatro 2007</strong><br>
-            Obra: "Calcinados o Elogio del Barrendero". Eldorado, Misiones, Argentina, agosto del 2007. <strong>-PREMIO DE PUESTA EN ESCENA -PREMIO DE ACTUACION</strong>
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional OTOÑO AZUL</strong><br>
-            Obra: "Calcinados o Elogio del Barrendero". Buenos Aires, Argentina, mayo del 2007. <strong>-PREMIO ESPECIAL DEL JURADO "CATINA VERA" -PREMIO DE LA POPULARIDAD</strong>
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de Pequeño Formato El Mejunje</strong><br>
-            Obra: "Calcinados o Elogio del Barrendero". Santa Clara, Cuba, enero del 2007. <strong>-PREMIO DE ACTUACION</strong>
-        </div>
-        <div class="award-item">
-            <strong>Festival "Teatrales de invierno"</strong><br>
-            Obra: "Calcinados o Elogio del Barrendero". San Antonio, Cuba, noviembre del 2006. <strong>-PREMIO DE ACTUACION</strong>
-        </div>
-        <div class="award-item">
-            <strong>Festival de Camagüey 2004</strong><br>
-            Obra: "Muerte de Amor en Verona".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de La Habana 2003</strong><br>
-            Obra: "Historia de un Caba-yo".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de La Habana 2001</strong><br>
-            Obra: "Muertes de amor en Verona".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de Caracas 2001</strong><br>
-            Obra: "Historia de un Caba-yo".
-        </div>
-        <div class="award-item">
-            <strong>Gira Nacional con "Historia de un Caba-yo"</strong>. 2000.
-        </div>
-        <div class="award-item">
-            <strong>Festival de Camagüey 2000</strong><br>
-            Obra: "Otra vez Jehová con el cuento de Sodoma".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de monólogos y espectáculos unipersonales. 1995</strong><br>
-            Obra: "Las últimas horas del Emperador". Ciudad Habana.
-        </div>
-        <div class="award-item">
-            <strong>Encuentro Internacional teatral en Canarias. 1992</strong><br>
-            Obra: "La otra isla".
-        </div>
-        <div class="award-item">
-            <strong>Encuentro Internacional en Madrid. 1991</strong><br>
-            Obra: "Réquiem".
-        </div>
-        <div class="award-item">
-            <strong>Festival Nacional "La máscara de Caoba", en Santiago de Cuba. 1990</strong><br>
-            Obra: "Time – Ball".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de Teatro para niños en Cienfuegos. 1989</strong><br>
-            Obra: "Galápago".
-        </div>
-        <div class="award-item">
-            <strong>Festival Internacional de Juventudes Madeburgo 88. En Alemania. 1988</strong><br>
-            Obra: Lo que naturam num dá… Salamanca num presta.
-        </div>
-    </section>
-
-    <section>
-        <h2>Repertorio Teatral</h2>
-        
-        <h3>Como Actor</h3>
-        <ul>
-            <li><strong>"La Noche que Jamás Existió"</strong> (Autor: Humberto Robles, Marzo 2024)</li>
-            <li><strong>"Alocada Avaricia"</strong> (Autor: Roberto Espinal, Diciembre 2021)</li>
-            <li><strong>"Luz Negra"</strong> (Autor: Álvaro Menen Desleal, Mayo 2019)</li>
-            <li><strong>"Galápago"</strong> (Autor: Salvador Lémis, Agosto 2018)</li>
-            <li><strong>"Desamparado"</strong> (Autor: Albero Pedro, Marzo 2017)</li>
-            <li><strong>"En Busca del barquito de papel."</strong> (Co-dirección con Lázaro Hernández, Autora: Silvia Ortoff, Agosto 2015)</li>
-            <li><strong>"El Yuma y el Cubano"</strong> (Teatro dell a Ginestra, Italia. Co-dirección con Dante de Rose, 2014)</li>
-            <li><strong>"La Emigración es una Zorra"</strong> (Teatro dell a Ginestra, Italia. Co-dirección con Dante de Rose, 2013)</li>
-            <li><strong>"Galileo Galilei"</strong> (Autor: Bertolt Brecht, Dirección: Antonia Fernández, Junio 2012)</li>
-            <li><strong>"Tío Vania"</strong> (Premio de la crítica en Cuba 2010, Dirección: Julio C Ramírez, Octubre 2010)</li>
-            <li><strong>"La visita de la vieja dama"</strong> (Autor: Friedrich Durrenmmatt, Dirección: Alejandro Palomino, Marzo 2006)</li>
-            <li><strong>"Otelo, el Moro de Venecia"</strong> (Autor: William Shakespeare, Dirección: Giraldo Moisés Cárdenas, Enero 2006)</li>
-            <li><strong>"Calcinados o Elogio del Barrendero"</strong> (Monólogo, Autor: Manuel Martínez, Dirección: Osley Méndez, Octubre 2005)</li>
-            <li><strong>"Muerte de amor en Verona"</strong> (Versión de Romeo y Julieta, Dirección: Antonia Fernández, Septiembre 2001)</li>
-            <li><strong>"Historia de un Caba-yo"</strong> (Versión de Mark Rezovski / Tolstoi, Dirección: Antonia Fernández, Octubre 2000)</li>
-            <li><strong>"Sueño de una noche de verano"</strong> (Autor: W. Shakespeare, Dirección: José Milián, Julio 1999)</li>
-            <li><strong>"Vaselina"</strong> (Autor: Jim Jacobs, Dirección: José Milián, Febrero 1998)</li>
-            <li><strong>"Esperando a Godot"</strong> (Personaje: Pozo, Autor: Samuel Beckett, Dirección: José Milián, Octubre 1996)</li>
-            <li><strong>"Mahagonny"</strong> (Versión de Bertolt Brecht, Dirección: José Milián, Noviembre 1995)</li>
-        </ul>
-
-        <h3>Como Director</h3>
-        <ul>
-            <li><strong>"No se Elige ser un Héroe"</strong> (David de Sola, Mayo 2022)</li>
-            <li><strong>"Luz Negra"</strong> (Álvaro Menen Desleal, Mayo 2019)</li>
-            <li><strong>"Galápago"</strong> (Salvador Lémis)</li>
-            <li><strong>"Desamparado"</strong> (Albero Pedro, Marzo 2017)</li>
-            <li><strong>"En Busca del barquito de papel."</strong> (Silvia Ortoff junto a Lázaro Hernández, Agosto 2015)</li>
-            <li><strong>"La Emigración es una Zorra"</strong> (Co-dirección con Dante de Rose, 2014)</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p><strong>Fuentes:</strong> Cuba escena, Consejo Nacional de las Artes Escénicas, entrevista 292, entrevista 281, loador, irremediablemente-juntos-nueva-película-cubana, Chejov-en-las-esquinas.</p>
-        <p>&copy; 2024 Alfredo Reyes Martínez. Todos los derechos reservados.</p>
-    </footer>
+<div class="personal-info">
+<div class="info-item"><strong>Nacimiento</strong>22 Abril 1965, La Habana</div>
+<div class="info-item"><strong>Residencia</strong>Cuba</div>
+<div class="info-item"><strong>Nacionalidad</strong>Cubana</div>
+<div class="info-item"><strong>Educación</strong>Universidad de las Artes (ISA)</div>
+<div class="info-item"><strong>Ocupación</strong>Actor y Director</div>
+<div class="info-item"><strong>Grupo</strong>Teatro Espacio de la Habana</div>
 </div>
 
+<section class="trayectoria-section">
+<h2>Trayectoria como Actor</h2>
+<div class="trayectoria-container">
+<div class="trayectoria-image-wrapper">
+<img src="trayectoria-teatro.jpg" alt="Alfredo Reyes en escena" class="trayectoria-img">
+<div class="image-overlay">Escena teatral</div>
+</div>
+<div class="trayectoria-content">
+<div class="trayectoria-text">
+<p class="lead-text">
+Inició en teatro con <em>Galápago</em> (1988). Ha formado parte de Teatro Buendía, 
+Pequeño Teatro de la Habana, Estudio Teatral Vivarta y Vital Teatro. 
+Actualmente es actor y director del grupo Teatro Espacio de la Habana.
+</p>
+<p>
+Ha participado en múltiples festivales nacionales e internacionales, 
+obteniendo reconocimientos por actuación y popularidad. 
+Ha trabajado con directores como María Elena Ortega, Flora Lawten, 
+Antonia Fernández, Alejandro Palomino y Julio Cesar Ramírez.
+</p>
+<div class="highlight-box">
+<strong>Cine:</strong>
+<em>Irremediablemente Juntos</em> (2012) - Dir. Jorge Luis Sánchez
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="formacion-section">
+<h2>Formación y Profesores</h2>
+<div class="formacion-container">
+<div class="formacion-image-wrapper">
+<img src="formacion-profesores.jpg" alt="Muerte de amor en Verona" class="formacion-img">
+<div class="image-overlay">Muerte de amor en Verona</div>
+</div>
+<div class="formacion-content">
+<h3>Principales Profesores</h3>
+<ul class="teachers-list">
+<li><span class="teacher-name">Filander Funes</span><span class="teacher-info">Director teatral del Salvador</span></li>
+<li><span class="teacher-name">María Elena Ortega</span><span class="teacher-info">Directora teatral cubana</span></li>
+<li><span class="teacher-name">José Milián</span><span class="teacher-info">Director y Dramaturgo cubano</span></li>
+<li><span class="teacher-name">Ivan Tenorio</span><span class="teacher-info">Coreógrafo del Ballet Nacional de Cuba</span></li>
+<li><span class="teacher-name">Felix Padrón</span><span class="teacher-info">Circo Nacional de Cuba</span></li>
+<li><span class="teacher-name">Angel Menendez</span><span class="teacher-info">Opera Nacional de Cuba</span></li>
+</ul>
+</div>
+</div>
+
+<div class="cursos-section">
+<h3>Cursos de Postgrado y Talleres</h3>
+<div class="cursos-grid">
+<div class="curso-item"><span class="curso-year">1997</span><p><strong>Santiago García y Patricia Ariza</strong>, Colombia</p></div>
+<div class="curso-item"><span class="curso-year">1997</span><p><strong>Denisse Stoklos</strong>, Brasil</p></div>
+<div class="curso-item"><span class="curso-year">1993</span><p><strong>Patrice Pavís</strong>, Francia</p></div>
+<div class="curso-item"><span class="curso-year">1992</span><p><strong>Ladislav Fialka</strong>, Checoslovaquia</p></div>
+<div class="curso-item"><span class="curso-year">1992</span><p>Grupo <strong>"La Zaranda"</strong>, España</p></div>
+<div class="curso-item"><span class="curso-year">1991</span><p>Compañía <strong>"Ridotto"</strong>, Italia</p></div>
+<div class="curso-item highlight"><span class="curso-year">1991</span><p><strong>Francis Ford Coppola</strong>, Estados Unidos</p></div>
+<div class="curso-item"><span class="curso-year">1990</span><p><strong>Eduardo Camacho</strong>, España</p></div>
+<div class="curso-item"><span class="curso-year">1990</span><p><strong>Oswaldo Dragún</strong>, Argentina</p></div>
+<div class="curso-item"><span class="curso-year">1989</span><p><strong>Miguel Rubio y Teresa Ralli</strong>, Perú</p></div>
+<div class="curso-item"><span class="curso-year">1989</span><p><strong>Julia Varley</strong> y Odín Theatre</p></div>
+</div>
+</div>
+</section>
+
+<section class="cursos-impartidos-section">
+<h2>Cursos Impartidos</h2>
+<div class="cursos-grid">
+<div class="curso-card international">
+<div class="card-header">
+<span class="card-icon">🇲</span>
+<span class="card-badge">Internacional</span>
+</div>
+<div class="curso-titulo">Actuación y Movimiento Escénico</div>
+<div class="curso-lugar">📍 Juchitán, Oaxaca, México</div>
+<span class="curso-type">Taller Práctico</span>
+</div>
+<div class="curso-card international">
+<div class="card-header">
+<span class="card-icon">🇪🇸</span>
+<span class="card-badge">Internacional</span>
+</div>
+<div class="curso-titulo">Expresión Corporal</div>
+<div class="curso-lugar">📍 Universidad de Bellas Artes, Tenerife</div>
+<span class="curso-type">Formación Universitaria</span>
+</div>
+<div class="curso-card international">
+<div class="card-header">
+<span class="card-icon">🇪🇸</span>
+<span class="card-badge">Internacional</span>
+</div>
+<div class="curso-titulo">Juegos Didácticos y Teatro</div>
+<div class="curso-lugar">📍 La Laguna, Islas Canarias</div>
+<span class="curso-type">Educación Infantil</span>
+</div>
+<div class="curso-card international">
+<div class="card-header">
+<span class="card-icon">🇪🇸</span>
+<span class="card-badge">Internacional</span>
+</div>
+<div class="curso-titulo">Expresión Corporal para Actores</div>
+<div class="curso-lugar">📍 Castilla La Mancha, España</div>
+<span class="curso-type">Formación de Actores</span>
+</div>
+<div class="curso-card national">
+<div class="card-header">
+<span class="card-icon">🇨🇺</span>
+<span class="card-badge national-badge">Nacional</span>
+</div>
+<div class="curso-titulo">Expresión Corporal</div>
+<div class="curso-lugar">📍 Artemisa y Mayabeque</div>
+<span class="curso-type">Formación de Instructores</span>
+</div>
+<div class="curso-card national">
+<div class="card-header">
+<span class="card-icon">🇨🇺</span>
+<span class="card-badge national-badge">Nacional</span>
+</div>
+<div class="curso-titulo">Actuación Teatral</div>
+<div class="curso-lugar">📍 Artemisa y Mayabeque</div>
+<span class="curso-type">Formación de Instructores</span>
+</div>
+</div>
+<div class="cursos-stats">
+<div class="stat-box"><div class="stat-number">6+</div><div class="stat-label">Cursos</div></div>
+<div class="stat-box"><div class="stat-number">3</div><div class="stat-label">Países</div></div>
+<div class="stat-box"><div class="stat-number">4</div><div class="stat-label">Internacionales</div></div>
+<div class="stat-box"><div class="stat-number">2</div><div class="stat-label">Nacionales</div></div>
+</div>
+</section>
+
+<section class="cine-tv-section">
+<h2>Cine y Televisión</h2>
+<div class="cine-tv-header">
+<div class="media-images">
+<div class="image-container">
+<img src="television1.jpg" alt="Cine" class="media-img">
+<div class="image-label">🎬 Cine</div>
+</div>
+<div class="image-container">
+<img src="television2.png" alt="Televisión" class="media-img">
+<div class="image-label">📺 Televisión</div>
+</div>
+</div>
+</div>
+
+<div class="media-block">
+<h3 class="media-subtitle">🎥 Cine</h3>
+<table class="media-table">
+<thead><tr><th>Trabajo</th><th>Personaje</th><th>Guion</th><th>Dirección</th></tr></thead>
+<tbody>
+<tr><td><strong>"Estorbo"</strong> (Cubano-Brasileña)</td><td>Reportero de TV</td><td>Chico Buarque</td><td>Rui Guerra</td></tr>
+<tr class="highlight-row"><td><strong>"Irremediablemente Juntos"</strong></td><td>Mokongo</td><td>Jorge L. Sanchez</td><td>Jorge L. Sanchez</td></tr>
+<tr><td><strong>"Bolívar"</strong> (Cubano-Venezolana)</td><td>El Haitiano</td><td>-</td><td>-</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="media-block">
+<h3 class="media-subtitle">📡 Televisión</h3>
+<table class="media-table">
+<thead><tr><th>Obra</th><th>Personaje</th><th>Dirección</th></tr></thead>
+<tbody>
+<tr><td><strong>"La Otra Historia"</strong></td><td>Raúl</td><td>Armando Toledo</td></tr>
+<tr><td><strong>"Mercaderes del Ama"</strong></td><td>Nano</td><td>Sherdon Britman</td></tr>
+<tr class="highlight-row"><td><strong>"Hasta Encontrarnos"</strong> (Antena 3)</td><td>Hugo (El Monje)</td><td>Jorge L. Sánchez</td></tr>
+<tr><td><strong>"Las Huérfanas de la Obrapía"</strong></td><td>Chano</td><td>Rafael González</td></tr>
+<tr><td><strong>"Rotonda"</strong></td><td>Sombrilla</td><td>Armando Toledo</td></tr>
+<tr><td><strong>"Hora 92"</strong></td><td>Ismael</td><td>Armando Toledo</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="eventos-section">
+<h2>Eventos y Reconocimientos</h2>
+<div class="eventos-container">
+<div class="eventos-image-wrapper">
+<img src="eventos-reconocimientos.jpg" alt="Historia de un Caba-yo" class="eventos-img">
+<div class="image-overlay-below">Historia de un Caba-yo</div>
+<div class="image-overlay-stats">
+<div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Festivales</div></div>
+<div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">Premios</div></div>
+</div>
+</div>
+
+<div class="eventos-content">
+<div class="awards-timeline">
+<div class="timeline-item">
+<div class="timeline-year">2026</div>
+<div class="award-card">
+<div class="award-title">Festín Teatral Internacional CARDENAS</div>
+<div class="award-info">
+<span>📍 Cárdenas, Tabasco, México</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+<span>📅 Enero-Febrero 2026</span>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2015</div>
+<div class="award-card award-winner">
+<div class="award-badge">🏆 PREMIO</div>
+<div class="award-title">Festival A UNA SOLA VOZ</div>
+<div class="award-info">
+<span>📍 Miami, EE.UU</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+</div>
+<div class="award-prize"><strong>🏅 PREMIO DE ACTUACIÓN</strong></div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2007</div>
+<div class="award-card award-winner">
+<div class="award-badge">🏆 DOBLE PREMIO</div>
+<div class="award-title">Encuentro del Arte y la Cultura del Mercosur</div>
+<div class="award-info">
+<span>📍 Eldorado, Misiones, Argentina</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+</div>
+<div class="award-prize">
+<strong>🏅 PREMIO DE PUESTA EN ESCENA</strong>
+<strong>🏅 PREMIO DE ACTUACIÓN</strong>
+</div>
+</div>
+<div class="award-card award-winner">
+<div class="award-badge">🏆 PREMIOS</div>
+<div class="award-title">Festival Internacional OTOÑO AZUL</div>
+<div class="award-info">
+<span>📍 Buenos Aires, Argentina</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+</div>
+<div class="award-prize">
+<strong>🏅 PREMIO ESPECIAL DEL JURADO "CATINA VERA"</strong>
+<strong>🏅 PREMIO DE LA POPULARIDAD</strong>
+</div>
+</div>
+<div class="award-card award-winner">
+<div class="award-badge">🏆 PREMIO</div>
+<div class="award-title">Festival El Mejunje</div>
+<div class="award-info">
+<span>📍 Santa Clara, Cuba</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+</div>
+<div class="award-prize"><strong>🏅 PREMIO DE ACTUACIÓN</strong></div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2006</div>
+<div class="award-card award-winner">
+<div class="award-badge">🏆 PREMIO</div>
+<div class="award-title">Festival "Teatrales de Invierno"</div>
+<div class="award-info">
+<span>📍 San Antonio, Cuba</span>
+<span>🎭 Calcinados o Elogio del Barrendero</span>
+</div>
+<div class="award-prize"><strong>🏅 PREMIO DE ACTUACIÓN</strong></div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">1988-2004</div>
+<div class="award-info" style="font-size: 0.85em; color: #666;">
+Participación en festivales en Cuba, Venezuela, España, Alemania y otros países. 
+Obras destacadas: "Historia de un Caba-yo", "Muerte de Amor en Verona", 
+"Galápago", "Réquiem", "Time – Ball".
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Repertorio Teatral</h2>
+<h3>Como Actor</h3>
+<ul>
+<li><strong>"La Noche que Jamás Existió"</strong> - Humberto Robles (2024)</li>
+<li><strong>"Alocada Avaricia"</strong> - Roberto Espinal (2021)</li>
+<li><strong>"Luz Negra"</strong> - Álvaro Menen Desleal (2019)</li>
+<li><strong>"Galápago"</strong> - Salvador Lémis (2018)</li>
+<li><strong>"Desamparado"</strong> - Albero Pedro (2017)</li>
+<li><strong>"En Busca del barquito de papel"</strong> - Silvia Ortoff (2015)</li>
+<li><strong>"El Yuma y el Cubano"</strong> - Teatro dell a Ginestra, Italia (2014)</li>
+<li><strong>"La Emigración es una Zorra"</strong> - Italia (2013)</li>
+<li><strong>"Galileo Galilei"</strong> - Bertolt Brecht (2012)</li>
+<li><strong>"Tío Vania"</strong> - Premio de la crítica Cuba 2010</li>
+<li><strong>"La visita de la vieja dama"</strong> - Friedrich Durrenmatt (2006)</li>
+<li><strong>"Otelo, el Moro de Venecia"</strong> - Shakespeare (2006)</li>
+<li><strong>"Calcinados o Elogio del Barrendero"</strong> - Manuel Martínez (2005)</li>
+<li><strong>"Muerte de amor en Verona"</strong> - Shakespeare (2001)</li>
+<li><strong>"Historia de un Caba-yo"</strong> - Mark Rezovski/Tolstoi (2000)</li>
+<li><strong>"Sueño de una noche de verano"</strong> - Shakespeare (1999)</li>
+<li><strong>"Vaselina"</strong> - Jim Jacobs (1998)</li>
+<li><strong>"Esperando a Godot"</strong> - Samuel Beckett (1996)</li>
+<li><strong>"Mahagonny"</strong> - Bertolt Brecht (1995)</li>
+</ul>
+
+<h3>Como Director</h3>
+<ul>
+<li><strong>"No se Elige ser un Héroe"</strong> - David de Sola (2022)</li>
+<li><strong>"Luz Negra"</strong> - Álvaro Menen Desleal (2019)</li>
+<li><strong>"Galápago"</strong> - Salvador Lémis</li>
+<li><strong>"Desamparado"</strong> - Albero Pedro (2017)</li>
+<li><strong>"En Busca del barquito de papel"</strong> - Silvia Ortoff (2015)</li>
+<li><strong>"La Emigración es una Zorra"</strong> - Co-dirección (2014)</li>
+</ul>
+</section>
+
+<footer>
+<p><strong>Fuentes:</strong> Cuba escena, Consejo Nacional de las Artes Escénicas, entrevistas, ICAIC</p>
+<p>&copy; 2024 Alfredo Reyes Martínez. Todos los derechos reservados.</p>
+</footer>
+</div>
 </body>
 </html>
